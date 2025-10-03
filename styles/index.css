@@ -47,15 +47,21 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-.input-text-post{
+.input-text-post {
     display: block;
-    width: 500px;
+    width: 500px;   /* ограничиваем ширину */
     height: 250px;
+
     box-sizing: border-box;
+    padding: 16px 20px;
+
     font-size: 32px;
-    font-weight: 400;
     font-family: 'Inter';
-    background: rgba(255,255,255,0.2);
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.2);
+
+    resize: none; /* убираем ручное растягивание */
+    outline: none;
 }
 
 .wrapper-btn-posting{
@@ -72,6 +78,7 @@
     color: rgb(255, 255, 255);
     box-sizing: border-box;
     box-shadow: none;
+    cursor: pointer;
 }
 
 .wrapper-ribbon{
@@ -97,7 +104,7 @@
     width: 500px;
 }
 
-.post{
+.posts{
     width: 500px;
 }
 
@@ -105,4 +112,40 @@
     font-size: 32px;
     font-weight: 400;
     color: rgba(151, 151, 151, 1);
+}
+
+.wrapper-post-title{
+    width: 500px;
+    margin-bottom: 15px;
+}
+
+.post-title{
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    overflow-wrap: break-word; /* современный стандарт */
+}
+
+.wrapper-post-text{
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.post-text{
+    display: block;
+    overflow-wrap: break-word; /* современный стандарт */
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.wrapper-time{
+    margin-bottom: 15px;
+    width: 500px;
+    height: 30px;
+}
+
+.time{
+    color: rgba(0, 148, 255, 1);
+    font-size: 25px;
+    font-weight: 400;
 }
