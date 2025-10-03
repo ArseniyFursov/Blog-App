@@ -4,11 +4,11 @@ const postTextInputNode = document.querySelector('.js-input-text-post');
 const newPostBtnNode = document.querySelector('.js-btn-post');
 const postsNode = document.querySelector('.js-posts');
 
-const now = new Date();
-const time = now.toLocaleString("ru-RU");
+
 
 newPostBtnNode.addEventListener('click', function() {
     const postFromUser = getPostFromUser();
+    
 
     addPost(postFromUser);
 
@@ -38,6 +38,8 @@ function getPosts() {
 
 function renderPosts() {
     const posts = getPosts();
+    const now = new Date();
+    const time = now.toLocaleString("ru-RU");
 
     let postsHTML = '';
 
